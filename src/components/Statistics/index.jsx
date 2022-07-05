@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import styles from "../Statistics/index.module.css"
 
 const Statistics=({title="",stats})=>{
-    var style=()=>{
+    let style=()=>{
         var r=Math.floor(Math.random()*256);
         var g=Math.floor(Math.random()*256);
         var b=Math.floor(Math.random()*256);
@@ -13,7 +13,10 @@ const Statistics=({title="",stats})=>{
     return(
 
         <section className={styles.statistics}>
-            <h2 className={styles.title}>{title}</h2>
+            {
+                title?<h2 className={styles.title}>{title}</h2>:null
+            }
+            
 
             <ul className={styles.stat_list}>
 
