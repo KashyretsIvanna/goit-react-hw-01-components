@@ -1,5 +1,4 @@
-import { arrayOf } from "prop-types";
-import PropTypes from "prop-types";
+import PropTypes,{ arrayOf } from "prop-types";
 import styles from "../Statistics/index.module.css"
 
 const Statistics=({title="",stats})=>{
