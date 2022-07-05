@@ -1,4 +1,4 @@
-import PropTypes,{ arrayOf } from "prop-types";
+import PropTypes from "prop-types";
 import styles from "../Statistics/index.module.css"
 
 const Statistics=({title="",stats})=>{
@@ -31,7 +31,7 @@ const Statistics=({title="",stats})=>{
 
 Statistics.propTypes={
     title:PropTypes.string,
-    stats:arrayOf(
+    stats:PropTypes.arrayOf(
         PropTypes.shape({
             id:PropTypes.string,
             label:PropTypes.string,
